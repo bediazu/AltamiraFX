@@ -1,0 +1,53 @@
+
+.mainFxmlClass {
+
+}
+
+.botones{
+    -fx-background-color: transparent;
+}
+
+.botones:hover{
+    -fx-background-color: #202332;
+}
+
+.botonSalir{
+    -fx-background-color: transparent;
+}
+
+.botonSalir:hover{
+    -fx-background-color: #ff4436;
+}
+
+.botonPresionado{
+    -fx-background-color: #202332;
+    -fx-background-color: firebrick;
+    -fx-background-radius: 5;
+}
+
+.imagenes
+{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+.parent{
+    -fx-background-color: #fff;
+}
+
+.sidebar{
+    -fx-background-color: #333645;
+}
+
+.card_01{
+    -fx-background-color: #4dd0e1;
+}
+
+.card_02{
+    -fx-background-color: #f06292;
+}
+
+.card_03{
+    -fx-background-color: #fff176;
+}
+
+
