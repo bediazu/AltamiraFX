@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="747.0" styleClass="parent" stylesheets="@home.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.EstadisticasControlador">
+    <stylesheets>
+        <URL value="@home.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutX="8.0" prefHeight="110.0" prefWidth="741.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="57.0" layoutY="31.0" prefHeight="35.0" prefWidth="141.0" text="Estadisticas" textFill="#756d6d">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="#41b1c2" glyphName="COG" layoutX="683.0" layoutY="56.0" size="22" />
+            <FontAwesomeIconView fill="#41b1c2" glyphName="BAR_CHART" layoutX="29.0" layoutY="56.0" size="22" />
+         </children>
+      </Pane>
+      <LineChart fx:id="grafico" layoutX="28.0" layoutY="100.0" prefHeight="281.0" prefWidth="703.0" title="Reservas por Cliente">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <HBox alignment="CENTER" layoutX="28.0" layoutY="404.0" prefHeight="220.0" prefWidth="703.0" spacing="30.0">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="198.0" style="-fx-background-color: #c2185b;" styleClass="imagenes">
+               <children>
+                  <Separator layoutY="49.0" prefWidth="200.0" />
+                  <HBox alignment="CENTER" prefHeight="47.0" prefWidth="200.0" spacing="40.0">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="BAR_CHART_ALT" size="20" />
+                        <Label prefHeight="27.0" prefWidth="118.0" text="Totales" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label fx:id="lblSemanales" layoutX="79.0" layoutY="77.0" prefHeight="98.0" prefWidth="35.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font size="78.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="198.0" style="-fx-background-color: #689f38;" styleClass="imagenes">
+               <children>
+                  <Separator layoutY="49.0" prefWidth="200.0" />
+                  <HBox alignment="CENTER" prefHeight="47.0" prefWidth="200.0" spacing="40.0">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="BAR_CHART_ALT" size="20" />
+                        <Label text="Maximo (Cliente)" textAlignment="CENTER" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label fx:id="lblMensuales" layoutX="79.0" layoutY="79.0" prefHeight="98.0" prefWidth="35.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font size="78.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="198.0" style="-fx-background-color: #fb8c00;" styleClass="imagenes">
+               <children>
+                  <Separator layoutY="49.0" prefWidth="200.0" />
+                  <HBox alignment="CENTER" prefHeight="47.0" prefWidth="200.0" spacing="40.0">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="BAR_CHART_ALT" size="20" />
+                        <Label text="Clientes" textAlignment="CENTER" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label fx:id="lblAnuales" layoutX="79.0" layoutY="80.0" prefHeight="98.0" prefWidth="35.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font size="78.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
