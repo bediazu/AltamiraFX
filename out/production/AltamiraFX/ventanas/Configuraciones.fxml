@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="747.0" styleClass="parent" stylesheets="@home.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.ConfiguracionesControlador">
+    <stylesheets>
+        <URL value="@home.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutX="8.0" prefHeight="110.0" prefWidth="741.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="57.0" layoutY="31.0" prefHeight="35.0" prefWidth="179.0" text="Configuraciones" textFill="#756d6d">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="#c24642" glyphName="CLOSE" layoutX="683.0" layoutY="56.0" size="22" />
+            <Separator layoutX="14.0" layoutY="77.0" prefHeight="0.0" prefWidth="713.0" />
+            <FontAwesomeIconView fill="#41b1c2" glyphName="COG" layoutX="29.0" layoutY="56.0" size="22" />
+         </children>
+      </Pane>
+      <VBox layoutX="27.0" layoutY="160.0" prefHeight="189.0" prefWidth="272.0" spacing="40.0">
+         <children>
+            <JFXTextField labelFloat="true" promptText="Nick" />
+            <JFXTextField labelFloat="true" promptText="Clave" />
+            <JFXTextField labelFloat="true" promptText="Correo" />
+         </children>
+      </VBox>
+      <Separator layoutX="329.0" layoutY="93.0" orientation="VERTICAL" prefHeight="320.0" prefWidth="7.0" />
+      <JFXButton layoutX="179.0" layoutY="349.0" prefHeight="35.0" prefWidth="128.0" text="Agregar Usuario">
+         <graphic>
+            <FontAwesomeIconView glyphName="PLUS" size="18" />
+         </graphic>
+      </JFXButton>
+      <JFXButton layoutX="27.0" layoutY="349.0" prefHeight="35.0" prefWidth="128.0" text="Limpiar Campos">
+         <graphic>
+            <FontAwesomeIconView glyphName="UNDO" size="18" />
+         </graphic>
+      </JFXButton>
+      <JFXTreeTableView layoutX="352.0" layoutY="211.0" prefHeight="173.0" prefWidth="374.0">
+         <columns>
+            <TreeTableColumn prefWidth="75.0" text="Telefono" />
+            <TreeTableColumn prefWidth="75.0" text="Nombre" />
+            <TreeTableColumn prefWidth="75.0" text="Rut" />
+            <TreeTableColumn prefWidth="75.0" text="Edad" />
+         </columns>
+      </JFXTreeTableView>
+      <Label layoutX="352.0" layoutY="100.0" prefHeight="35.0" prefWidth="197.0" text="Usuarios:" textFill="#756d6d">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="#41b1c2" glyphName="USERS" size="20" />
+         </graphic>
+      </Label>
+      <Label layoutX="27.0" layoutY="100.0" prefHeight="35.0" prefWidth="197.0" text="Crear Usuario" textFill="#756d6d">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="#41b1c2" glyphName="USER_PLUS" size="20" />
+         </graphic>
+      </Label>
+      <JFXTextField labelFloat="true" layoutX="352.0" layoutY="160.0" prefHeight="25.0" prefWidth="374.0" promptText="Buscar Usuario" />
+      <JFXButton layoutX="25.0" layoutY="534.0" prefHeight="35.0" prefWidth="140.0" text="Eliminar Cliente">
+         <graphic>
+            <FontAwesomeIconView glyphName="USER_TIMES" size="18" />
+         </graphic>
+      </JFXButton>
+      <Separator layoutX="18.0" layoutY="413.0" prefHeight="0.0" prefWidth="713.0" />
+      <Label layoutX="27.0" layoutY="435.0" prefHeight="35.0" prefWidth="216.0" text="Modificar Usuario" textFill="#756d6d">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="#41b1c2" glyphName="USER_PLUS" size="20" />
+         </graphic>
+      </Label>
+      <HBox layoutX="27.0" layoutY="481.0" prefHeight="43.0" prefWidth="374.0" spacing="30.0">
+         <children>
+            <JFXTextField labelFloat="true" prefHeight="25.0" prefWidth="145.0" promptText="Nick" />
+            <JFXTextField labelFloat="true" prefHeight="25.0" prefWidth="145.0" promptText="Clave" />
+            <JFXTextField labelFloat="true" prefHeight="25.0" prefWidth="145.0" promptText="Correo" />
+         </children>
+      </HBox>
+      <JFXButton layoutX="193.0" layoutY="534.0" prefHeight="35.0" prefWidth="140.0" text="Actualizar Cliente">
+         <graphic>
+            <FontAwesomeIconView glyphName="SAVE" size="18" />
+         </graphic>
+      </JFXButton>
+      <Label layoutX="266.0" layoutY="435.0" prefHeight="35.0" prefWidth="179.0" text="USUARIO PRUEBA" textFill="#756d6d">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="#41b1c2" glyphName="USER" size="20" />
+         </graphic>
+      </Label>
+      <Separator layoutX="451.0" layoutY="426.0" orientation="VERTICAL" prefHeight="215.0" prefWidth="7.0" />
+      <Label layoutX="466.0" layoutY="435.0" prefHeight="35.0" prefWidth="197.0" text="Opciones" textFill="#756d6d">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="#41b1c2" glyphName="COG" size="20" />
+         </graphic>
+      </Label>
+      <VBox layoutX="466.0" layoutY="485.0" prefHeight="132.0" prefWidth="263.0" spacing="20.0">
+         <children>
+            <HBox prefHeight="47.0" prefWidth="263.0">
+               <children>
+                  <JFXTextField labelFloat="true" prefHeight="25.0" prefWidth="162.0" promptText="Base de Datos" />
+                  <JFXButton prefHeight="25.0" prefWidth="91.0" text="Actualizar">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="DATABASE" size="18" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox prefHeight="44.0" prefWidth="263.0">
+               <children>
+                  <JFXTextField labelFloat="true" prefHeight="25.0" prefWidth="162.0" promptText="Reporte" />
+                  <JFXButton prefHeight="25.0" prefWidth="91.0" text="Actualizar">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="FILE_TEXT" size="18" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <JFXTextField labelFloat="true" prefHeight="25.0" prefWidth="162.0" promptText="Otros" />
+                  <JFXButton prefHeight="25.0" prefWidth="91.0" text="Actualizar">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="FILE_TEXT" size="18" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

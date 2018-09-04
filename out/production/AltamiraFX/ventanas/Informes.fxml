@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="747.0" styleClass="parent" stylesheets="@home.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.InformesControlador">
+    <stylesheets>
+        <URL value="@home.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutX="8.0" prefHeight="110.0" prefWidth="741.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="57.0" layoutY="31.0" prefHeight="35.0" prefWidth="141.0" text="Informes" textFill="#756d6d">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="#41b1c2" glyphName="COG" layoutX="683.0" layoutY="56.0" size="22" />
+            <FontAwesomeIconView fill="#41b1c2" glyphName="FILE_TEXT_ALT" layoutX="29.0" layoutY="56.0" size="22" />
+         </children>
+      </Pane>
+      <HBox alignment="CENTER" layoutX="22.0" layoutY="208.0" prefHeight="220.0" prefWidth="703.0" spacing="30.0">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="198.0" style="-fx-background-color: #c2185b;" styleClass="imagenes">
+               <children>
+                  <Separator layoutY="49.0" prefWidth="200.0" />
+                  <HBox alignment="CENTER" prefHeight="47.0" prefWidth="200.0" spacing="40.0">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="BAR_CHART_ALT" size="20" />
+                        <Label prefHeight="27.0" prefWidth="118.0" text="Clientes" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <VBox alignment="TOP_CENTER" layoutX="2.0" layoutY="52.0" prefHeight="166.0" prefWidth="198.0" spacing="10.0">
+                     <children>
+                        <JFXButton onMouseClicked="#expClientesPDF" prefHeight="39.0" prefWidth="199.0" text="Exportar en PDF" textFill="WHITE">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="FILE_PDF_ALT" size="20" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton onMouseClicked="#expClientesCSV" prefHeight="39.0" prefWidth="199.0" text="Exportar en CSV" textFill="WHITE">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="FILE_EXCEL_ALT" size="20" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="198.0" style="-fx-background-color: #689f38;" styleClass="imagenes">
+               <children>
+                  <Separator layoutY="49.0" prefWidth="200.0" />
+                  <HBox alignment="CENTER" prefHeight="47.0" prefWidth="200.0" spacing="40.0">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="BAR_CHART_ALT" size="20" />
+                        <Label text="Reservas" textAlignment="CENTER" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <VBox alignment="TOP_CENTER" layoutY="52.0" prefHeight="166.0" prefWidth="198.0" spacing="10.0">
+                     <children>
+                        <JFXButton onMouseClicked="#expReservasCSV" prefHeight="39.0" prefWidth="199.0" text="Exportar en CSV" textFill="WHITE">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="FILE_EXCEL_ALT" size="20" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <Separator layoutX="24.0" layoutY="87.0" prefHeight="0.0" prefWidth="713.0" />
+      <Label layoutX="47.0" layoutY="110.0" prefHeight="35.0" prefWidth="251.0" text="Exportar Reportes" textFill="#756d6d">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="#41b1c2" glyphName="ARROW_CIRCLE_ALT_DOWN" size="20" />
+         </graphic>
+      </Label>
+   </children>
+</AnchorPane>

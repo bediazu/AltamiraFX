@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="panelLogin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.LoginPanelControlador">
+   <children>
+      <ImageView fitHeight="98.0" fitWidth="105.0" layoutX="37.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+         <image>
+            <Image url="@/logos/altamira-logo-gray.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="37.0" layoutY="153.0" text="Bienvenido," textFill="#545454">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="183.0" text="Inicio de sesion" textFill="#a3a3a3">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtUser" focusColor="#3472b5" labelFloat="true" layoutX="45.0" layoutY="263.0" onKeyPressed="#Enter" prefHeight="26.0" prefWidth="311.0" promptText="Usuario" unFocusColor="#242424">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtPass" focusColor="#3472b5" labelFloat="true" layoutX="45.0" layoutY="327.0" onKeyPressed="#Enter" prefHeight="26.0" prefWidth="311.0" promptText="Contraseña" unFocusColor="#242424">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton layoutX="220.0" layoutY="374.0" text="¿Olvido la contraseña?" textFill="#a3a3a3" />
+      <JFXButton buttonType="RAISED" layoutX="60.0" layoutY="453.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#login_usuario" prefHeight="50.0" prefWidth="300.0" styleClass="loginBtn" stylesheets="@principal.css" text="Aceptar" />
+      <JFXButton fx:id="btnRegistro" layoutX="224.0" layoutY="519.0" onMouseClicked="#registro_usuario" text="Registrate" textFill="#242424">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="109.0" layoutY="522.0" text="¿Nuevo usuario?" textFill="#a3a3a3" />
+      <JFXButton layoutX="298.0" layoutY="43.0" onMouseClicked="#salir" styleClass="loginBtn" stylesheets="@principal.css" text="Salir">
+         <graphic>
+            <FontAwesomeIconView fill="#c24642" glyphName="CLOSE" size="20" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>
